@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>For My Love ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+height:100vh;
+overflow:hidden;
+font-family:Poppins,sans-serif;
+background:
+radial-gradient(circle at top, rgba(255,182,193,.15), transparent 40%),
+linear-gradient(rgba(10,0,30,.55), rgba(30,0,50,.65)),
+url("https://images.unsplash.com/photo-1519741497674-611481863552?w=1920");
+background-size:cover;
+background-position:center;
+color:white;
+}
+
+.overlay{
+position:absolute;
+inset:0;
+backdrop-filter:blur(2px);
+background: rgba(0,0,0,.15);
+}
+
+.title{
+position:absolute;
+top:40px;
+left:50%;
+transform:translateX(-50%);
+text-align:center;
+}
+
+.title h1{
+font-family:'Great Vibes',cursive;
+font-size:6rem;
+letter-spacing:2px;
+color:#ffd1e8;
+text-shadow:0 0 20px #ff5ea8;
+}
+
+.subtitle{
+font-size:1.3rem;
+margin-top:10px;
+}
+
+.love-quote{
+margin-top:20px;
+font-size:1.1rem;
+color:#ffe3f0;
+font-style:italic;
+}
+
+.heart-center{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+width:340px;
+height:340px;
+display:flex;
+justify-content:center;
+align-items:center;
+cursor:pointer;
+}
+
+.heart-center:before,
+.heart-center:after{
+content:'';
+position:absolute;
+width:150px;
+height:240px;
+background:#ff4d94;
+border-radius:150px 150px 0 0;
+box-shadow:0 0 40px #ff4d94;
+}
+
+.heart-center:before{
+left:75px;
+transform:rotate(-45deg);
+transform-origin:0 100%;
+}
+
+.heart-center:after{
+left:0;
+transform:rotate(45deg);
+transform-origin:100% 100%;
+}
+
+.heart-text{
+position:relative;
+z-index:5;
+font-family:'Great Vibes',cursive;
+font-size:3.8rem;
+text-shadow:0 0 20px white;
+text-align:center;
+}
+
+.memory{
+position:absolute;
+left:50px;
+top:220px;
+width:260px;
+background:rgba(255,255,255,.15);
+backdrop-filter:blur(10px);
+padding:20px;
+border-radius:20px;
+}
+
+.memory img{
+width:100%;
+border-radius:15px;
+}
+
+.timer{
+position:absolute;
+left:50px;
+bottom:60px;
+width:320px;
+background:rgba(255,255,255,.1);
+padding:20px;
+border-radius:20px;
+backdrop-filter:blur(12px);
+}
+
+.timer h2{
+margin-bottom:15px;
+}
+
+.counter{
+display:flex;
+justify-content:space-between;
+}
+
+.box{
+text-align:center;
+}
+
+.box span{
+display:block;
+font-size:2rem;
+font-weight:bold;
+}
+
+.reasons{
+position:absolute;
+right:50px;
+top:220px;
+width:320px;
+background:rgba(255,255,255,.12);
+backdrop-filter:blur(12px);
+padding:25px;
+border-radius:25px;
+}
+
+.reason{
+margin:15px 0;
+padding:12px;
+background:rgba(255,255,255,.08);
+border-radius:15px;
+}
+
+.note{
+position:absolute;
+right:80px;
+bottom:70px;
+background:#fff0f5;
+color:#5b2144;
+padding:25px;
+border-radius:15px;
+width:260px;
+font-style:italic;
+}
+
+.music{
+position:absolute;
+right:50px;
+top:50px;
+background:rgba(255,255,255,.12);
+backdrop-filter:blur(10px);
+padding:20px;
+border-radius:20px;
+width:300px;
+}
+
+.float-heart{
+position:absolute;
+font-size:25px;
+animation:float 12s linear infinite;
+opacity:.7;
+}
+
+@keyframes float{
+from{
+transform:translateY(100vh);
+}
+to{
+transform:translateY(-100px);
+}
+}
+
+.glow{
+animation:pulse 2s infinite;
+}
+
+@keyframes pulse{
+50%{
+transform:translate(-50%,-50%) scale(1.05);
+}
+}
+
+.love-letter-modal{
+position:fixed;
+inset:0;
+display:none;
+justify-content:center;
+align-items:center;
+background:rgba(0,0,0,.75);
+z-index:1000;
+}
+
+.love-letter-content{
+max-width:700px;
+background:rgba(255,240,245,.95);
+color:#5b2144;
+padding:40px;
+border-radius:30px;
+line-height:1.9;
+font-size:1.1rem;
+box-shadow:0 0 40px rgba(255,105,180,.4);
+}
+
+.close-btn{
+margin-top:20px;
+padding:12px 25px;
+border:none;
+border-radius:25px;
+background:#ff4d94;
+color:white;
+cursor:pointer;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="overlay"></div>
+
+<div class="title">
+<h1>For The Most Amazing Wife ❤️</h1>
+<p class="subtitle">
+Some love stories are written in the stars,
+ours is my favorite.
+</p>
+<p class="love-quote">
+Every heartbeat of mine whispers your name ❤️
+</p>
+</div>
+
+<div class="music">
+🎵 Our Song<br>
+I Will Always Love You
+</div>
+
+<div class="memory">
+<img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=500">
+<p style="margin-top:15px;">
+Every moment with you is my favorite part of the day ❤️
+</p>
+</div>
+
+<div class="heart-center glow" onclick="showLove()">
+<div class="heart-text">
+Open My Heart
+</div>
+</div>
+
+<div class="reasons">
+<h2>100 Reasons Why I Love You</h2>
+
+<div class="reason">❤️ You make my world beautiful</div>
+<div class="reason">❤️ You are my peace</div>
+<div class="reason">❤️ You believe in me</div>
+
+<button style="
+margin-top:15px;
+width:100%;
+padding:12px;
+border:none;
+border-radius:30px;
+background:#ff4d94;
+color:white;
+font-size:1rem;">
+Read More
+</button>
+</div>
+
+<div class="timer">
+<h2>Countdown To Our Wedding ❤️</h2>
+
+<div class="counter">
+<div class="box"><span id="days">0</span>Days</div>
+<div class="box"><span id="hours">0</span>Hours</div>
+<div class="box"><span id="minutes">0</span>Min</div>
+<div class="box"><span id="seconds">0</span>Sec</div>
+</div>
+</div>
+
+<div class="note">
+No matter where life takes us,
+I just want to go there with you ❤️
+</div>
+
+<div id="loveModal" class="love-letter-modal">
+  <div class="love-letter-content">
+    <h2>To My Future Wife ❤️</h2>
+    <p>
+      On 3 December 2026, we begin a beautiful new chapter together.
+      Until then, every day brings me closer to the life I've always dreamed of — a life with you.
+      Thank you for being my peace, my strength, and my favorite person.
+    </p>
+    <p>
+      No matter where life takes us, I promise to choose you, support you, and love you with all my heart.
+    </p>
+    <button class="close-btn" onclick="closeLoveLetter()">Close ❤️</button>
+  </div>
+</div>
+
+<script>
+
+for(let i=0;i<50;i++){
+const h=document.createElement("div");
+h.className="float-heart";
+h.innerHTML="❤️";
+h.style.left=Math.random()*100+"vw";
+h.style.animationDuration=(8+Math.random()*8)+"s";
+document.body.appendChild(h);
+}
+
+function showLove(){
+ document.getElementById('loveModal').style.display='flex';
+}
+
+function closeLoveLetter(){
+ document.getElementById('loveModal').style.display='none';
+}
+
+const weddingDate=new Date("2026-12-03T00:00:00");
+
+function updateTimer(){
+
+const now=new Date();
+const diff=weddingDate-now;
+
+const days=Math.floor(diff/86400000);
+const hours=Math.floor(diff/3600000)%24;
+const minutes=Math.floor(diff/60000)%60;
+const seconds=Math.floor(diff/1000)%60;
+
+document.getElementById("days").innerText=days;
+document.getElementById("hours").innerText=hours;
+document.getElementById("minutes").innerText=minutes;
+document.getElementById("seconds").innerText=seconds;
+
+}
+
+setInterval(updateTimer,1000);
+updateTimer();
+
+</script>
+
+</body>
+</html>
