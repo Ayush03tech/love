@@ -5,6 +5,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
 <title>For My Love ❤️</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
@@ -253,6 +256,141 @@ border-radius:25px;
 background:#ff4d94;
 color:white;
 cursor:pointer;
+}
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    body{
+        overflow-y:auto;
+        overflow-x:hidden;
+        min-height:100vh;
+    }
+
+    .title{
+        position:relative;
+        top:20px;
+        left:auto;
+        transform:none;
+        width:100%;
+        padding:20px;
+    }
+
+    .title h1{
+        font-size:3rem;
+        line-height:1.2;
+    }
+
+    .subtitle{
+        font-size:1rem;
+    }
+
+    .love-quote{
+        font-size:.95rem;
+        padding:0 20px;
+    }
+
+    .music,
+    .memory,
+    .reasons,
+    .timer,
+    .note{
+        position:relative;
+        width:90%;
+        max-width:400px;
+        margin:20px auto;
+        left:auto;
+        right:auto;
+        top:auto;
+        bottom:auto;
+    }
+
+    .heart-center{
+        position:relative;
+        top:auto;
+        left:auto;
+        transform:none;
+        margin:40px auto;
+        width:250px;
+        height:250px;
+    }
+
+    .heart-center:before,
+    .heart-center:after{
+        width:110px;
+        height:180px;
+    }
+
+    .heart-center:before{
+        left:55px;
+    }
+
+    .heart-text{
+        font-size:2.4rem;
+    }
+
+    .memory img{
+        height:250px;
+    }
+
+    .counter{
+        flex-wrap:wrap;
+        gap:15px;
+        justify-content:center;
+    }
+
+    .box{
+        min-width:70px;
+    }
+
+    .box span{
+        font-size:1.5rem;
+    }
+
+    .love-letter-content{
+        width:90%;
+        max-height:80vh;
+        overflow:auto;
+        padding:25px;
+    }
+
+    .reasons h2{
+        font-size:1.3rem;
+    }
+}
+
+/* Extra Small Devices */
+
+@media (max-width: 480px){
+
+    .title h1{
+        font-size:2.4rem;
+    }
+
+    .heart-text{
+        font-size:2rem;
+    }
+
+    .heart-center{
+        width:220px;
+        height:220px;
+    }
+
+    .memory,
+    .music,
+    .reasons,
+    .timer,
+    .note{
+        width:95%;
+    }
+
+    .love-letter-content{
+        padding:20px;
+        font-size:1rem;
+    }
 }
 
 </style>
