@@ -18,13 +18,14 @@ box-sizing:border-box;
 }
 
 body{
-height:100vh;
-overflow:hidden;
+min-height:100vh;
+overflow-x:hidden;
+overflow-y:auto;
 font-family:Poppins,sans-serif;
 background:
-radial-gradient(circle at top, rgba(255,182,193,.15), transparent 40%),
-linear-gradient(rgba(10,0,30,.55), rgba(30,0,50,.65)),
-url("https://images.unsplash.com/photo-1519741497674-611481863552?w=1920");
+radial-gradient(circle at 20% 20%, rgba(255,192,203,.25), transparent 25%),
+radial-gradient(circle at 80% 30%, rgba(255,105,180,.18), transparent 25%),
+linear-gradient(135deg,#120018,#2c0f45,#4a1d6f);
 background-size:cover;
 background-position:center;
 color:white;
